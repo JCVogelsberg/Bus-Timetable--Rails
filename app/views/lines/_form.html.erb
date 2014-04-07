@@ -1,0 +1,18 @@
+<%= form_for(@line) do |f| %>
+  <div class="form-group">
+    <%= f.label :Line_Number %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="form_group"><br>
+    <%= f.label "Stops at Stations:" %><br>
+    <% @stations.each do |station| %>
+    <%= check_box_tag(
+        "line[station_ids][]", station.id,
+          @line.stations.detect{|d| d == station}) %>
+        <%= "#{station.name}" %><br/>
+        <% end %>
+<br>
+  <%= f.submit(:class => "btn btn-primary") %>
+
+<% end %>
