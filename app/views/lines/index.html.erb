@@ -5,5 +5,9 @@
     <li><a href="/lines/<%= line.id %>"><%= line.name %></a></li>
     <% end %>
 </ul>
+<br>
+<p><%= link_to "Add a New Line", new_line_path, :class=> "btn btn-default" %></p>
 
-<p><%= link_to "New Line", new_line_path, :class=> "btn btn-default" %></p>
+
+<br>
+<p><a href="/stations">Go to Stations</a></p>

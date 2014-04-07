@@ -1,4 +1,4 @@
-class StationsController < ApplicationController
+class StationsController < ActionController::Base
   def new
     @station = Station.new
   end
@@ -11,6 +11,11 @@ class StationsController < ApplicationController
     else
       render 'new'
     end
+  end
+
+  private
+  def station_params
+    params.require(:station).permit(:name)
   end
 
   def index
