@@ -13,11 +13,6 @@ class StationsController < ActionController::Base
     end
   end
 
-  private
-  def station_params
-    params.require(:station).permit(:name)
-  end
-
   def index
     @stations = Station.all
   end
@@ -46,4 +41,10 @@ class StationsController < ActionController::Base
     flash[:notice] = "Station Deleted."
     redirect_to("/stations")
   end
+
+  private
+  def station_params
+    params.require(:station).permit(:name)
+  end
+
 end

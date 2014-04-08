@@ -1,7 +1,6 @@
 class LinesController < ActionController::Base
   def new
-    @stations = Station.all
-    @line = Line.new
+    @station = Station.new
   end
 
   def create
