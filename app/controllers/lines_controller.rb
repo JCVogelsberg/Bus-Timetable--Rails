@@ -1,4 +1,4 @@
-class LinesController < ActionController::Base
+class LinesController < ApplicationController
   def new
     @station = Station.new
   end
