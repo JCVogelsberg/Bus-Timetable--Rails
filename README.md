@@ -22,4 +22,4 @@ There's a many-to-many relationship between stations and lines. I'd suggest call
 
 [-] As a bus rider, I want to view a bus line and see all of the buses that run on it and what time they arrive at each stop, so that I can pick one that fits my schedule.
 
-[-] As a bus rider, I want a visual representation of the bus system, so that I can more easily see which lines go where. Hint: Check out D3.js; don't overlook the d3-rails gem.
+[-] As a bus rider, I want a visual representation of the bus system, so that I can more easily see which lines go where.
